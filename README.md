@@ -1,4 +1,6 @@
-# Ng6Proj
+# nglisting
+
+https://nglisting.josefzacek.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
 
@@ -14,8 +16,12 @@ Install angular-cli-ghpages
 
 Built app and optimize for production
 
-`ng build --prod --base-href http://nglisting.josefzacek.com`
+`ng build --prod `
 
-Publish to gh-pages
+Add CNAME file (needed for custom subdomain setup)
 
-`ngh`
+`echo "nglisting.josefzacek.com" > dist/CNAME`
+
+Publish to gh-pages (nglisting is name of app)
+
+`ngh --dir dist/nglisting --no-silent`
